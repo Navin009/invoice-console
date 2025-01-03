@@ -1,12 +1,13 @@
 "use client";
 import { NavbarSegmented } from "@/components/navbar-segmented/NavbarSegmented";
-import { AppShell, Burger, Group, Skeleton } from "@mantine/core";
+import { AppShell, Burger, Group } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import { Session } from "next-auth";
 
 type Props = {
-	children: React.ReactNode;
-	session: any;
-	signOut: any;
+	children: Readonly<React.ReactNode>;
+	session: Session | null;
+	signOut: JSX.Element;
 };
 
 export function BasicAppShell({ children, session, signOut }: Props) {
@@ -17,7 +18,7 @@ export function BasicAppShell({ children, session, signOut }: Props) {
 			<AppShell.Header>
 				<Group h="100%" px="md">
 					<Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-					<div style={{ fontFamily: "Inter", fontSize: "1.5rem", fontWeight: "bold" }}>STORE 369</div>
+					<div style={{ fontSize: "1.9rem" }}>Invoice Console</div>
 				</Group>
 			</AppShell.Header>
 			<AppShell.Navbar>
