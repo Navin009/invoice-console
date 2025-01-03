@@ -1,0 +1,65 @@
+.container {
+	padding: 20px;
+	width: 100%;
+}
+
+.invoiceDetails {
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+	width: auto;
+}
+
+.invoiceTitle {
+	font-size: 2rem;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.invoiceInfo p {
+	font-size: 1rem;
+	color: #555;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.itemsSection {
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.itemsTitle {
+	font-size: 1.5rem;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.itemsTable {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.itemsTable th,
+.itemsTable td {
+	padding: 10px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+.itemsTable th {
+	background-color: #f4f4f4;
+	font-weight: bold;
+}
+
+.itemsTable tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.itemsTable tr:hover {
+	background-color: #f1f1f1;
+}
